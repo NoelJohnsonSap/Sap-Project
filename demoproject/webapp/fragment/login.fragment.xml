@@ -1,0 +1,54 @@
+<c:FragmentDefinition
+	xmlns:c="sap.ui.core"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+		<f:SimpleForm id="S1"
+		editable="true"
+		layout="ResponsiveGridLayout"
+		labelSpanXL="3"
+		labelSpanL="3"
+		labelSpanM="3"
+		
+		adjustLabelSpan="false"
+		emptySpanXL="4"
+		emptySpanL="4"
+		emptySpanM="4"
+		
+		columnsXL="1"
+		columnsL="1"
+		
+		class="center-title">
+	
+				
+				<f:content>
+					<HBox id="HBox1">
+						<VBox id="VBox1" class="sapUiSmallMargin">
+							<Title text="" id="Title1" level="H1"></Title>
+						</VBox>
+					</HBox>
+					<FlexBox id="FlexBox1" width="100%" justifyContent="Center" alignItems="Center" height="100%">
+						<VBox id="VBox2" >
+							<FlexBox id="FlexBox2" justifyContent="Center" class="sapUiSmallMargin">
+								<Label id="Label1" text="Login Form" class="Header_text_color"></Label>
+							</FlexBox>
+							<HBox id="HBox3" >
+								<VBox id="_IDGenVBox55" class="sapUiSmallMarginEnd">
+									<Label id="_IDGenLabel11" text="Email" ></Label>
+									<Input id="_IDGenInput33" width="200px" placeholder="Enter email"></Input>
+								</VBox>
+							</HBox>
+							<HBox id="_IDGenHBox44" >
+								<VBox id="_IDGenVBox77" class="sapUiSmallMarginEnd">
+									<Label id="_IDGenLabel55" text="Password"></Label>
+									<Input id="_IDGenInput55" width="200px" placeholder="Enter password" type="Password"></Input>
+								</VBox>
+							</HBox>
+							<HBox id="_IDGenHBox55" justifyContent="Center">
+		<Button id="_IDGenButton11" type="Accept" text="Login" press="onLoginPress" width="100%" />
+	</HBox>
+	
+						</VBox>
+					</FlexBox>
+				</f:content>
+			</f:SimpleForm>
+</c:FragmentDefinition>

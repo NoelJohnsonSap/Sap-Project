@@ -1,0 +1,16 @@
+<mvc:View controllerName="com.applexus.listdisplay1.controller.Homepage"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+			<Button id="_IDGenButton1" type="Accept"
+						text="Go to List" press="onPress" ariaDescribedBy="acceptButtonDescription genericButtonDescription">
+					<layoutData>
+						<FlexItemData id="_IDGenFlexItemData1" growFactor="1" />
+					</layoutData>
+				</Button>
+		</content>
+    </Page>
+</mvc:View>

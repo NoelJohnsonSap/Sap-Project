@@ -1,0 +1,39 @@
+<mvc:View controllerName="com.applexus.calculator1test.controller.sample1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+	xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content >
+			<Input
+				id="productInput"
+				type="Text" width="10%">
+			</Input>
+    <HBox id="HB1">
+                    <Button id="num7" text="7" press="onButtonPress" class="normalButton"/>
+                    <Button id="num8" text="8" press="onButtonPress" class="normalButton"/>
+                    <Button id="num9" text="9" press="onButtonPress" class="normalButton"/>
+                    <Button id="add" text="+" press="onButtonPress" class="normalButton"/>
+                </HBox>
+                <HBox id="HB2">
+                    <Button id="num4" text="4" press="onButtonPress" class="normalButton"/>
+                    <Button id="num5" text="5" press="onButtonPress" class="normalButton" />
+                    <Button id="num6" text="6" press="onButtonPress" class="normalButton" />
+                    <Button id="sub" text="-" press="onButtonPress" class="normalButton"/>
+                </HBox>
+                <HBox id="HB3">
+                    <Button id="num1" text="1" press="onButtonPress" class="normalButton"/>
+                    <Button id="num2" text="2" press="onButtonPress" class="normalButton"/>
+                    <Button id="num3" text="3" press="onButtonPress" class="normalButton"/>
+                    <Button id="mul" text="*" press="onButtonPress" class="normalButton"/>
+                </HBox>
+                <HBox id="HB4">
+                    <Button id="clear" text="C" press="onButtonPress" class="normalButton"/>
+                    <Button id="num0" text="0" press="onButtonPress" class="normalButton"/>
+                    <Button id="cal" text="=" press="onButtonPress" class="normalButton"/>
+                    <Button id="div" text="/" press="onButtonPress" class="normalButton"/>
+                </HBox>
+                
+        </content>
+    </Page>
+</mvc:View>

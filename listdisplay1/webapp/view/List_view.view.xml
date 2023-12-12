@@ -1,0 +1,28 @@
+<mvc:View controllerName="com.applexus.listdisplay1.controller.List_view"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:fb="sap.ui.comp.filterbar"
+	xmlns="sap.m">
+	<Page id="page" title="{i18n>title}">
+		<content >
+			<SearchField id="_IDGenSearchField1" width="90%" liveChange="onSearch" class="sapUiSmallMargin" />
+			<OverflowToolbarButton id="otb1" tooltip="Delete" type="Transparent" icon="sap-icon://delete" press="onDeletePress"/>
+
+			<List id="_IDGenList1" items="{/fruit}" headerText="Products" mode="MultiSelect" selectionChange="onSelectionChange"  >
+				<items >
+					<ObjectListItem  id="_IDGenObjectListItem1" title="{name}" type="Navigation" icon="{image}" intro="{taste}" press="onListItemPress" number="{
+					parts:[{path:'price'},{path:'curr'}],
+					type: 'sap.ui.model.type.Currency',
+					formatOptions: {showMeasure: false}
+				}" numberUnit="{curr}">
+						<firstStatus>
+							<ObjectStatus id="_IDGenObjectStatus1" text="{status}" state="{
+							path: 'Status',
+							formatter: 'sap.m.sample.ObjectListItem.Formatter.status'
+						}" />
+						</firstStatus>
+					</ObjectListItem>
+				</items>
+			</List>
+		</content>
+	</Page>
+</mvc:View>

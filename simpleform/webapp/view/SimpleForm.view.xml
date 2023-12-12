@@ -1,0 +1,30 @@
+<mvc:View controllerName="com.applexus.simpleform.controller.SimpleForm"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+                <f:SimpleForm id="SimpleFormDisplay354" editable="true" layout="ResponsiveGridLayout" title="Address" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                    <f:content>
+                        <Label id="_IDGenLabel1" text="EMPLOYEE NUMBER" />
+                        <Input id="empNoInput" value="{EmployeeNo}" />
+
+                        <Label id="_IDGenLabel2" text="EMPLOYEE NAME" />
+                        <Input id="empNameInput" value="{EmployeeName}" />
+
+                        <Label id="_IDGenLabel3" text="EMPLOYEE SALARY" />
+                        <Input id="salaryInput" value="{Salary}" />
+
+                        <Label id="_IDGenLabel4" text="CURRENCY" />
+                        <Input id="currencyInput" value="{Currency}" />
+
+                    </f:content>
+                    <Button id="_IDGenButton1" type= "Accept" text="Next" press="onNextPress" />
+                </f:SimpleForm>
+            </VBox>
+        </content>
+
+    </Page>
+</mvc:View>

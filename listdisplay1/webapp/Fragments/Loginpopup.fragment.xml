@@ -1,0 +1,40 @@
+<core:FragmentDefinition xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form">
+    <!-- Define your UI elements here -->
+    <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+                <f:SimpleForm id="SimpleFormDisplay354" editable="false" layout="ResponsiveGridLayout" title="Fruits Details" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+                    <f:content>
+                        <Label id="_IDGenLabel1" text="FRUIT NAME" />
+                        <Input id="fruitNameInput" value= "{name}" />
+
+                        <Label id="_IDGenLabel2" text="FRUIT COLOR" />
+                        <Input id="fruitColorInput" value="{color}" />
+
+                        <Label id="_IDGenLabel3" text="TASTE" />
+                        <Input id="tasteInput" value="{taste}" />
+
+                        <Label id="_IDGenLabel4" text="FRUIT SIZE" />
+                        <Input id="fruitSizeInput" value="{size}" />
+
+                        <Label id="_IDGenLabel5" text="PRICE" />
+                        <Input id="priceInput" value="{price}" />
+
+                        <Label id="_IDGenLabel6" text="CURRENCY" />
+                        <Input id="currencyInput" value="{curr}" />
+
+                        <Label id="_IDGenLabel7" text="AVAILABILITY STATUS" />
+                        <Input id="statusInput" value="{status}" />
+
+                        <Label id="_IDGenLabel8" text="HEALTH BENEFITS" />
+                        <Input id="benefitsInput" value="{healthbenefits}" />
+
+                        <Label id="_IDGenLabel9" text="IMAGE" />
+                        <Image id="fruitImage" src="{image}" />
+
+
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+</core:FragmentDefinition>

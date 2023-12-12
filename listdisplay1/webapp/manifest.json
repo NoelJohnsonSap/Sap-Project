@@ -1,0 +1,134 @@
+{
+  "_version": "1.17.0",
+  "sap.app": {
+    "id": "com.applexus.listdisplay1",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.11.0",
+      "toolsId": "f6c3f8ee-4d50-4ac7-b48e-c108ed34d7c5"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.71.58",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.applexus.listdisplay1.i18n.i18n"
+        }
+      },
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/data.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "com.applexus.listdisplay1.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "name": "RouteList_view",
+          "pattern": ":?query:",
+          "target": [
+            "Homepage"
+          ]
+        },
+        {
+          "name": "Nav2",
+          "pattern": "listView",
+          "target": [
+            "TargetList_view"
+          ]
+        },
+        {
+          "name": "SplitAPP",
+          "pattern": "SplitView/{myParam}",
+          "target": [
+            "SplitAppVIew"
+          ]
+        }
+      ],
+      "targets": {
+        "TargetList_view": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "List_view",
+          "viewName": "List_view"
+        },
+        "Homepage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Homepage",
+          "viewName": "Homepage"
+        },
+        "SplitAppVIew": {
+          "viewId": "Splitapp",
+          "viewName": "Splitapp"
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.applexus.listdisplay1.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

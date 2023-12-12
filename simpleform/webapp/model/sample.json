@@ -1,0 +1,33 @@
+
+    [
+        {
+            "EmployeeNo": "12345",
+            "EmployeeName": "John Doe",
+            "Salary": "50000",
+            "Currency": "USD"
+        },
+        {
+            "EmployeeNo": "67890",
+            "EmployeeName": "Jane Smith",
+            "Salary": "60000",
+            "Currency": "EUR"
+        },
+        {
+            "EmployeeNo": "54321",
+            "EmployeeName": "Alice Johnson",
+            "Salary": "55000",
+            "Currency": "USD"
+        },
+        {
+            "EmployeeNo": "98765",
+            "EmployeeName": "Bob Wilson",
+            "Salary": "70000",
+            "Currency": "GBP"
+        },
+        {
+            "EmployeeNo": "24680",
+            "EmployeeName": "Eve Adams",
+            "Salary": "48000",
+            "Currency": "EUR"
+        }
+    ]

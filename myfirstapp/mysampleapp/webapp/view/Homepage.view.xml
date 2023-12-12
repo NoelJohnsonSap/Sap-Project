@@ -1,0 +1,19 @@
+<mvc:View controllerName="com.applexus.mysampleapp.controller.Homepage"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <?xml-stylesheet href=""?>
+    <Page id="page" title="Sample App">
+        <content> 
+        		<Input id="Input1" placeholder="Number1" width="10%">
+                </Input>
+                <Input id="Input2" placeholder="Number2"  width="10%"></Input>
+                <Input id="Input3" placeholder="Number3"  width="10%"></Input>
+                <Input id="Input4" placeholder="Number4"  width="10%"></Input>
+
+               
+				<Button id="btn1" text="Default" press="onPress"  width="20%"> </Button>
+				
+			
+        </content>
+    </Page>
+</mvc:View>

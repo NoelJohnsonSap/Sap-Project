@@ -1,0 +1,44 @@
+<mvc:View controllerName="com.applexus.calculator.controller.Calculator"
+	xmlns:l="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <l:VerticalLayout id="_IDGenVerticalLayout1"
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+			<Label id="input1" text="Calculator" labelFor="productInput"/>
+			<Input
+				id="productInput"
+				type="Text" width="15%">
+			</Input>
+		</l:content>
+	</l:VerticalLayout>
+    <HBox id="HB1">
+                    <Button id="num7" text="7" press="onButtonPress" />
+                    <Button id="num8" text="8" press="onButtonPress" />
+                    <Button id="num9" text="9" press="onButtonPress" />
+                    <Button id="add" text="x" press="onButtonPress" />
+                </HBox>
+                <HBox id="HB2">
+                    <Button id="num4" text="4" press="onButtonPress" />
+                    <Button id="num5" text="5" press="onButtonPress" />
+                    <Button id="num6" text="6" press="onButtonPress" />
+                    <Button id="sub" text="-" press="onButtonPress" />
+                </HBox>
+                <HBox id="HB3">
+                    <Button id="num1" text="1" press="onButtonPress" />
+                    <Button id="num2" text="2" press="onButtonPress" />
+                    <Button id="num3" text="3" press="onButtonPress" />
+                    <Button id="mul" text="*" press="onButtonPress" />
+                </HBox>
+                <HBox id="HB4">
+                    <Button id="clear" text="C" press="onButtonPress" />
+                    <Button id="num0" text="0" press="onButtonPress" />
+                    <Button id="cal" text="=" press="onButtonPress" />
+                    <Button id="div" text="/" press="onButtonPress" />
+                </HBox>
+        </content>
+    </Page>
+</mvc:View>

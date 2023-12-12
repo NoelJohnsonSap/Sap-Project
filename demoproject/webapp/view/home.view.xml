@@ -1,0 +1,53 @@
+<mvc:View 
+controllerName="com.applexus.demoproject.controller.home"
+xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+xmlns:smartTable="sap.ui.comp.smarttable"
+xmlns:c="sap.ui.core"
+xmlns="sap.m">   
+<!-- <Page id="_IDGenPage1" title="{i18n>title}" class="sap.m.IconTabBar"  >
+   <IconTabBar id="_IDGenIconTabBar1" >
+	<items>
+	<IconTabFilter id="_IDGenIconTabFilter1" key="info" icon="sap-icon://visits" text="Login" iconColor="Positive" iconDensityAware="false" design="Horizontal" tooltip="Login"> 
+    	<c:Fragment fragmentName="com.applexus.demoproject.fragment.login" type="XML"/>
+	</IconTabFilter>
+	<IconTabFilter id="_IDGenIconTabFilter2" key="info" icon="sap-icon://account" text="Register" iconColor="Negative" tooltip="Register"  iconDensityAware="false" design="Horizontal" >
+    	<c:Fragment fragmentName="com.applexus.demoproject.fragment.register" type="XML"/>
+	</IconTabFilter>
+	<IconTabFilter id="_IDGenIconTabFilter3" key="info" icon="sap-icon://meal" text="Menu" iconColor="Critical" tooltip="Menu"  iconDensityAware="false" design="Horizontal">
+    	<c:Fragment fragmentName="com.applexus.demoproject.fragment.menu" type="XML"/>
+	</IconTabFilter>
+	</items>
+	</IconTabBar>
+    </Page> -->
+		<VBox id="_IDGenVBox1" fitContainer="true">
+			<smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="LineItemsSet" persistencyKey="SmartFilter_Explored" basicSearchFieldName="Bukrs" enableBasicSearch="true" >
+				<smartFilterBar:controlConfiguration>
+					<smartFilterBar:ControlConfiguration id="_IDGenControlConfiguration1" key="Bukrs">
+					<smartFilterBar:defaultFilterValues>
+							<smartFilterBar:SelectOption id="_IDGenSelectOption1" low="0001">
+							</smartFilterBar:SelectOption>
+						</smartFilterBar:defaultFilterValues>
+					</smartFilterBar:ControlConfiguration>
+					<smartFilterBar:ControlConfiguration id="_IDGenControlConfiguration2" key="Gjahr">
+						<smartFilterBar:defaultFilterValues>
+								<smartFilterBar:SelectOption id="_IDGenSelectOption2" low="2014">
+								</smartFilterBar:SelectOption>
+							</smartFilterBar:defaultFilterValues>
+						</smartFilterBar:ControlConfiguration>
+				</smartFilterBar:controlConfiguration>
+				<!-- layout data used to make the table growing but the filter bar fixed -->
+				<smartFilterBar:layoutData>
+					<FlexItemData id="_IDGenFlexItemData1" shrinkFactor="0"/>
+				</smartFilterBar:layoutData>
+			</smartFilterBar:SmartFilterBar>
+			<smartTable:SmartTable id="LineItemsSmartTable" entitySet="LineItemsSet" smartFilterId="smartFilterBar" tableType="Table" useExportToExcel="true" beforeExport="onBeforeExport" useVariantManagement="true" useTablePersonalisation="true" header="Line Items" showRowCount="true" persistencyKey="SmartTableAnalytical_Explored" enableAutoBinding="true" class="sapUiResponsiveContentPadding"  editTogglable="true" >
+				<!-- layout data used to make the table growing but the filter bar fixed -->
+				<smartTable:layoutData>
+					<FlexItemData id="_IDGenFlexItemData2" growFactor="1" baseSize="0%"/>
+				</smartTable:layoutData>
+			</smartTable:SmartTable>
+		</VBox>
+</mvc:View>
+
+ 	

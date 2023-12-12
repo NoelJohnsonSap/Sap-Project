@@ -1,0 +1,7 @@
+/* Enter your custom styles here */
+/* Define a class for normal button style */
+.normalButton{
+    background-color: blue !important; /* You can use "blue" or a specific shade of blue (#3498db) */
+    color: rgb(236, 7, 7); /* Text color */
+
+}

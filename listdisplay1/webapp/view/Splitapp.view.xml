@@ -1,0 +1,48 @@
+<mvc:View controllerName="com.applexus.listdisplay1.controller.Splitapp"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:core="sap.ui.core">
+    <SplitApp id="SplitApp1">
+        <masterPages>
+            <Page id="page" title="{i18n>title}">
+                <content >
+                    <SearchField id="_IDGenSearchField1" width="90%" liveChange="onSearch" class="sapUiSmallMargin" />
+
+                    <List id="_IDGenList1" items="{/fruit}" headerText="Products" mode="None" selectionChange="onSelectionChange">
+                        <items >
+                            <ObjectListItem id="_IDGenObjectListItem1" title="{name}" type="Navigation" icon="{image}" intro="{taste}" press="onListItemPress" number="{
+					parts:[{path:'price'},{path:'curr'}],
+					type: 'sap.ui.model.type.Currency',
+					formatOptions: {showMeasure: false}
+				}" numberUnit="{curr}">
+                                <firstStatus>
+                                    <ObjectStatus id="_IDGenObjectStatus1" text="{status}" state="{
+							path: 'Status',
+							formatter: 'sap.m.sample.ObjectListItem.Formatter.status'
+						}" />
+                                </firstStatus>
+                            </ObjectListItem>
+                        </items>
+                    </List>
+                </content>
+            </Page>
+        </masterPages>
+        <detailPages>    
+            <VBox id="_IDGenVBox2">
+                <IconTabBar id="idIconTabBarFiori2">
+                    <items>
+                        <IconTabFilter id="it1" text="Fruit Details" key="info">
+                            <core:Fragment fragmentName="com.applexus.listdisplay1.Fragments.Loginpopup" type="XML" />
+                        </IconTabFilter>
+                        <IconTabFilter id="it2" text="Supplier Details" key="infod">
+                            <core:Fragment fragmentName="com.applexus.listdisplay1.Fragments.Supplier" type="XML" />
+                        </IconTabFilter>
+                    </items>
+                </IconTabBar>
+            </VBox>
+        </detailPages>
+    </SplitApp>
+</mvc:View>

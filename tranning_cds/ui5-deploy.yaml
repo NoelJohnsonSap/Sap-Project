@@ -1,0 +1,25 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: com.applexus.tranningcds
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: TR4
+          url: http://trvlinuxvm01.applexus.com:5201
+        app:
+          name: ZB14_06_NOEL
+          description: TestDeployment
+          package: Zb14_06_NOEL
+          transport: TR4K903419
+        exclude:
+          - /test/
